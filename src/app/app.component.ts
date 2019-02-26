@@ -8,12 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   clicksArray = [];
   i=1;
+  toggleButton = true;
 
 
 
 onButtonPush(){
   this.clicksArray.push(this.i++);
-console.log(this.clicksArray);
+  this.toggleButton = !this.toggleButton;
 
 }
 numberOfClicks(){
