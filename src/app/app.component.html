@@ -10,10 +10,10 @@
       </ol>
     </div>
   </div>
-<button
-class="btn btn-primary"
-(click)="onButtonPush()"
-> Display Details</button>
-<p *ngIf="toggleButton">This is a paragraph, the most detailed paragraph using the word paragraph to ever grace this page!</p>
-<div> You have pushed the button {{ numberOfClicks() }} times.</div>
+  <button
+  class="btn btn-primary"
+  (click)="onButtonPush()"
+  > Display Details</button>
+  <p *ngIf="toggleButton">This is a paragraph, the most detailed paragraph using the word paragraph to ever grace this page!</p>
+  <div [ngStyle]="{backgroundColor: getColor()}"> You have pushed the button {{ numberOfClicks() }} times.</div>
 </div>

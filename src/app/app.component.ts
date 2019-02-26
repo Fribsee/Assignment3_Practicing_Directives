@@ -20,5 +20,7 @@ onButtonPush(){
 numberOfClicks(){
   return this.i-1;
 }
-
+ getColor(){
+   return this.numberOfClicks() >= 5 ? 'blue': 'white';
+ }
 }
