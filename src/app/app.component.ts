@@ -7,20 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   clicksArray = [];
-  i=1;
+  i = 1;
   toggleButton = true;
 
 
 
-onButtonPush(){
-  this.clicksArray.push(this.i++);
-  this.toggleButton = !this.toggleButton;
+  onButtonPush() {
+    this.clicksArray.push(this.i++);
+    this.toggleButton = !this.toggleButton;
 
-}
-numberOfClicks(){
-  return this.i-1;
-}
- getColor(){
-   return this.numberOfClicks() >= 5 ? 'blue': 'white';
- }
+  }
+  numberOfClicks() {
+    return this.i - 1;
+  }
+  getColor() {
+    return this.numberOfClicks() >= 5 ? 'blue' : 'white';
+  }
 }
